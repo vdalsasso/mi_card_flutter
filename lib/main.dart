@@ -15,10 +15,14 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               CircleAvatar(
                 radius: 80.0,
-                backgroundColor: Colors.red,
-                child: Image(
-                  image: NetworkImage(
-                      'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+                backgroundImage: AssetImage('images/owl.jpg'),
+              ),
+              Text(
+                'Vinicius Dalsasso',
+                style: TextStyle(
+                  fontSize: 30.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ],
